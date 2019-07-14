@@ -1,20 +1,26 @@
 import React, { Component } from 'react'
 
+
 export class SkillsList extends Component {
-    static defaultProps = {
-        frontEnd : [
-            {
-                name: 'HTML',
-                image: <i class="fab fa-html5"></i>
-            }
-        ]
-    };
+    constructor(props) {
+        super(props);
+
+        console.log(this.props)
+      }
 
     render() {
         return (
             <div>
-                <h2>{this.props.frontEnd.name}</h2>
-                {this.props.frontEnd.image}
+                <ul>
+                 <h3 className='display-3'>Front End Skills</h3>
+                   {this.props.frontEnds}
+
+                 <h3 className='display-2'>Back End Skills</h3>
+                   {this.props.backEnds}
+                </ul>
+                <p>render check</p>
+                
+                
             </div>
         )
     }
