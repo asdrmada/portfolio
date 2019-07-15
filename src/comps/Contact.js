@@ -9,7 +9,7 @@ export class Contact extends Component {
                 <h4 className='display-4'>Email</h4>
                 <p>newmanalexander92@gmail.com</p>
 
-                <a href='github.io/asdrmada'><i class="fab fa-4x fa-github"></i></a>
+                <a href='https://github.com/asdrmada'><i class="fab fa-4x fa-github"></i></a>
 
                 <a href='https://www.linkedin.com/in/alexander-newman-a63572182/'><i class="fab fa-4x fa-linkedin"></i></a>
 

@@ -5,10 +5,11 @@ export class Skills extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            renderChoice : 'Front end'
+            renderChoice : 'Front End'
         }
+        this.changeSkillDisplay = this.changeSkillDisplay.bind(this);
         
-        console.log(this.state)
+        console.log(this.state);
       }
 
     static defaultProps = {
@@ -76,6 +77,13 @@ export class Skills extends Component {
         ]
     };
 
+    changeSkillDisplay(b){
+        this.setState(
+            {renderChoice : b.target.value}
+        )
+      console.log(this.state.renderChoice)
+    }
+
     render() {
 
         const  frontEndSkills = this.props.frontEnd.map((skill, key) => 
@@ -89,7 +97,11 @@ export class Skills extends Component {
         return (
             <div>
                 <h1 className='display-1 title'>Skills List</h1>
-                <SkillsList frontEnds={frontEndSkills} backEnds={backEndSkills}/>
+
+                <button onClick={this.changeSkillDisplay} value='Front End'>Front End Skills</button>
+                <button onClick={this.changeSkillDisplay} value='Back End'>Back End Skills</button>
+                
+                <SkillsList frontEnds={frontEndSkills} backEnds={backEndSkills} render={this.state.renderChoice}/>
             </div>
         )
     }

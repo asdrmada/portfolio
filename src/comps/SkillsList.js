@@ -9,17 +9,24 @@ export class SkillsList extends Component {
       }
 
     render() {
+
+      const showSkills = this.props.render === 'Front End';
+
         return (
             <div>
                 <ul>
-                 <h3 className='display-3'>Front End Skills</h3>
-                   {this.props.frontEnds}
-
-                 <h3 className='display-2'>Back End Skills</h3>
-                   {this.props.backEnds}
+                {showSkills ? (
+                  <div>
+                    <h3 className='display-3'>Front End Skills</h3>
+                    {this.props.frontEnds}
+                  </div>
+                ) : (
+                  <div>
+                    <h3 className='display-3'>Back End Skills</h3>
+                    {this.props.backEnds}
+                  </div>
+                )}
                 </ul>
-                <p>render check</p>
-                
                 
             </div>
         )
