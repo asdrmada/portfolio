@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './SkillsList.css';
 
 
 export class SkillsList extends Component {
@@ -17,12 +18,12 @@ export class SkillsList extends Component {
                 <ul>
                 {showSkills ? (
                   <div>
-                    <h3 className='display-3'>Front End Skills</h3>
+                    <h3 className='display-3' id='title-front'>Front End Skills</h3>
                     {this.props.frontEnds}
                   </div>
                 ) : (
                   <div>
-                    <h3 className='display-3'>Back End Skills</h3>
+                    <h3 className='display-3' id='title-back'>Back End Skills</h3>
                     {this.props.backEnds}
                   </div>
                 )}

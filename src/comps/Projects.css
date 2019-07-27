@@ -3,3 +3,19 @@
     font-family: Orbitron;
     text-shadow: #c50303 2px 3px;
  }
+
+ h3 {
+    font-family: Aldrich;
+    text-shadow: #c50303 2px 3px;
+    font-size: 6rem;
+}
+
+img {
+    height: 30rem;
+    width: 54rem;
+    border: solid 2px crimson 0.5;
+}
+
+.project{
+    margin-bottom: 2rem;
+}

@@ -98,8 +98,8 @@ export class Skills extends Component {
             <div>
                 <h1 className='display-1 title'>Skills List</h1>
 
-                <button onClick={this.changeSkillDisplay} value='Front End'>Front End Skills</button>
-                <button onClick={this.changeSkillDisplay} value='Back End'>Back End Skills</button>
+                <button type='button' class='btn btn-outline-danger' onClick={this.changeSkillDisplay} value='Front End'>Front End Skills</button>
+                <button type='button' class='btn btn-outline-danger' onClick={this.changeSkillDisplay} value='Back End'>Back End Skills</button>
                 
                 <SkillsList frontEnds={frontEndSkills} backEnds={backEndSkills} render={this.state.renderChoice}/>
             </div>

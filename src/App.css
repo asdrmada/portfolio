@@ -9,3 +9,9 @@ body {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
+.btn {
+  font-family: Orbitron;
+  margin-left: 0.5rem;
+  size: 2.0rem;
+}

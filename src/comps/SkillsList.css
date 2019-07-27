@@ -1,0 +1,21 @@
+#title-front {
+    font-family: Aldrich;
+    text-shadow: #c50303 2px 3px;
+}
+
+#title-back {
+    font-family: Aldrich;
+    text-shadow: #c50303 2px 3px;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+ul i {
+    font-size: 4rem;
+ }
+
+ul p {
+    font-weight: bold;
+}
