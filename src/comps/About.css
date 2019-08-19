@@ -3,3 +3,7 @@
     font-family: Orbitron;
     text-shadow: #c50303 2px 3px;
  }
+
+ p {
+     font-weight: bold;
+ }

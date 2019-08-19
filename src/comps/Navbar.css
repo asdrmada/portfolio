@@ -1,11 +1,19 @@
-.navbar {
-    background: #c50303;
-}
-
-.navbar-nav {
-    text-align: center;
-}
-
 i {
     font-size: 2rem;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #c50303;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #c50303;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #960202;
 }

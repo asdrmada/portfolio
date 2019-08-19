@@ -15,3 +15,29 @@ body {
   margin-left: 0.5rem;
   size: 2.0rem;
 }
+
+a {
+  transition: color 0.5s ease;
+  color: #c50303;
+}
+
+a:hover {
+  color: #960202;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #c50303;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #c50303;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #960202;
+}
+
