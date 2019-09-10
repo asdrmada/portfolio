@@ -12,6 +12,8 @@ export class Contact extends Component {
                     <h4>newmanalexander92@gmail.com</h4>
                 </div>
 
+                <h4 className='display-4 title'>Social Media</h4>
+ 
                 <a href='https://github.com/asdrmada'><i class="fab fa-4x fa-github contact-links"></i></a>
 
                 <a href='https://www.linkedin.com/in/alexander-newman-a63572182/'><i class="fab fa-4x fa-linkedin contact-links"></i></a>

@@ -10,12 +10,6 @@
     font-size: 6rem;
 }
 
-img {
-    height: 30rem;
-    width: 54rem;
-    border: solid 2px crimson 0.5;
-}
-
 .project{
     margin-bottom: 2rem;
     align-content: center;
@@ -23,5 +17,9 @@ img {
 
 .links {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.lead {
+    margin-top: 0.5rem
 }

@@ -16,28 +16,27 @@ body {
   size: 2.0rem;
 }
 
+
+img {
+  height: 30rem;
+  width: 54rem;
+  border: solid 2px crimson 0.5;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+img {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
 a {
   transition: color 0.5s ease;
   color: #c50303;
 }
 
 a:hover {
-  color: #960202;
-}
-
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-  color: #c50303;
-}
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-  color: #c50303;
-}
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:focus .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
   color: #960202;
 }
 
